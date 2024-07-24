@@ -1,0 +1,3 @@
+# ignorar arquivos/pastas
+!.storybook
+!.jest
