@@ -8,7 +8,7 @@ describe('<Main />', () => {
     const { container } = render(<Main />)
     //busca o elemento e verifica a existência dele
     expect(
-      screen.getByRole('heading', { name: /hello, world!/i })
+      screen.getByRole('heading', { name: /react avançado/i })
     ).toBeInTheDocument()
 
     //gerar snapshot

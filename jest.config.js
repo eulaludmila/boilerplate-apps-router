@@ -3,12 +3,13 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   collectCoverage: true,
   collectCoverageFrom: [
-    //não exibir certos tipos de arquivos na tabela de tests
+    //não exibir certos tipos de arquivos/pastas na tabela de tests
     'src/**/*.ts(x)?',
-    '!src/app/**', //should be tested in e2e (ignorar o que tier dentro da pasta app)
+    '!src/app/**', //should be tested in e2e (ignorar o que tiver dentro da pasta app)
     '!src/lib/registry.tsx',
-    '!src/types/**',
-    '!src/styles/**'
+    '!src/types/**', //tudo o que tiver dentro da pasta types
+    '!src/styles/**', //tudo o que tiver dentro da pasta styles
+    '!src/**/stories.tsx' //tudo o que tiver dentro da pasta src que se chama stories
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/'],

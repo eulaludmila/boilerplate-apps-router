@@ -1,3 +1,4 @@
 # ignorar arquivos/pastas
 !.storybook
 !.jest
+generators
